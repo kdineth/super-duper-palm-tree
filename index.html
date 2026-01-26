@@ -4,23 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <title>Naked Theory | #1 Strategic Marketing Agency Kandy & Sri Lanka</title>
-    <meta name="description" content="Dominate your market with Naked Theory, Kandy's premier digital marketing agency. We deliver high-performance web design, branding, and SEO strategies for businesses in Kandy and Sri Lanka.">
-    <meta name="keywords" content="Marketing Agency Kandy, Digital Marketing Kandy, Web Design Kandy, Branding Agency Kandy, SEO Services Kandy, Advertising Agency Sri Lanka, Naked Theory Pro, Social Media Marketing Kandy">
+    <title>Naked Theory | Surge Flow: The Agentic Marketing Revolution</title>
+    <meta name="description" content="Dominate your market with Naked Theory. Home to Surge Flow, the agentic AI solution replacing traditional marketing departments with autonomous growth engines.">
+    <meta name="keywords" content="Surge Flow AI, Marketing Agency Kandy, Agentic AI Marketing, Digital Marketing Kandy, AI Marketing Sri Lanka, Naked Theory Pro">
     <meta name="author" content="Naked Theory">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://nakedtheory.pro">
     <link rel="icon" type="image/jpeg" href="logo.jpeg">
     
     <meta property="og:type" content="business.business">
-    <meta property="og:title" content="Naked Theory | Best Marketing Agency in Kandy">
-    <meta property="og:description" content="Strategic branding and performance marketing based in Kandy. Trusted by Toyota Lanka, OptiSoft, and global leaders.">
+    <meta property="og:title" content="Naked Theory | Surge Flow: The End of Marketing Departments">
+    <meta property="og:description" content="Strategic branding and agentic AI marketing based in Kandy. Trusted by Toyota Lanka, OptiSoft, and global leaders.">
     <meta property="og:url" content="https://nakedtheory.pro">
     <meta property="og:site_name" content="Naked Theory">
-    <meta property="og:locale" content="en_US">
-    <meta property="business:contact_data:locality" content="Kandy">
-    <meta property="business:contact_data:region" content="Central Province">
-    <meta property="business:contact_data:country_name" content="Sri Lanka">
     
     <script type="application/ld+json">
     {
@@ -39,43 +35,16 @@
         "addressRegion": "Central Province",
         "postalCode": "20000",
         "addressCountry": "LK"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "7.2906",
-        "longitude": "80.6337"
-      },
-      "areaServed": ["Kandy", "Colombo", "Gampola", "Sri Lanka", "Global"],
-      "priceRange": "$$$",
-      "slogan": "Marketing Without The Bullsh*t",
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "opens": "09:00",
-        "closes": "18:00"
-      },
-      "sameAs": [
-        "https://www.facebook.com/nakedtheory",
-        "https://www.instagram.com/nakedtheory",
-        "https://www.linkedin.com/company/nakedtheory"
-      ]
+      }
     }
     </script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     
     <script src="https://cdn.tailwindcss.com"></script>
-    
     <script src="https://unpkg.com/lucide@latest"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
@@ -86,12 +55,13 @@
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
                         serif: ['Playfair Display', 'serif'],
+                        mono: ['Fira Code', 'monospace'],
                     },
                     colors: {
                         'theory-dark': '#0F172A',
-                        'theory-blue': '#0C1E30', /* Deeper, more luxurious blue */
-                        'theory-cream': '#FAFAF9', /* Warmer white */
-                        'theory-gold': '#C5A059', /* Muted Luxury Gold */
+                        'theory-blue': '#0C1E30',
+                        'theory-cream': '#FAFAF9',
+                        'theory-gold': '#C5A059',
                     },
                     animation: {
                         'fade-in-up': 'fadeInUp 1s ease-out forwards',
@@ -110,29 +80,14 @@
     <style>
         html { scroll-behavior: smooth; }
         body { -webkit-font-smoothing: antialiased; }
-        
-        /* Typography refinements */
         h1, h2, h3, h4 { letter-spacing: -0.02em; }
-        
-        /* Mobile Menu */
-        #mobile-menu {
-            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-            transform: translateX(100%);
-        }
+        #mobile-menu { transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); transform: translateX(100%); }
         #mobile-menu.open { transform: translateX(0); }
-        
-        /* Image styling */
-        img[alt]:after {  
-            content: attr(alt);
-            display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            background-color: #f1f5f9; color: #64748b; text-align: center; padding-top: 1rem;
-        }
-
-        /* Modal Transitions */
-        .modal-enter { opacity: 0; transform: scale(0.95); }
-        .modal-enter-active { opacity: 1; transform: scale(1); transition: all 0.3s ease-out; }
-        .modal-exit { opacity: 1; transform: scale(1); }
-        .modal-exit-active { opacity: 0; transform: scale(0.95); transition: all 0.3s ease-in; }
+        .terminal-glow { box-shadow: 0 0 30px rgba(197, 160, 89, 0.15); }
+        .agent-active { border-color: #C5A059 !important; background: rgba(197, 160, 89, 0.1); }
+        .terminal-scroll::-webkit-scrollbar { width: 4px; }
+        .terminal-scroll::-webkit-scrollbar-track { background: transparent; }
+        .terminal-scroll::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
     </style>
 </head>
 <body class="font-sans text-slate-800 bg-theory-cream min-h-screen selection:bg-theory-blue selection:text-white overflow-x-hidden">
@@ -154,23 +109,20 @@
                     </div>
                 </div>
                 <div class="md:w-3/5 p-8 md:p-12">
-                    <h4 class="text-xl font-bold text-theory-blue mb-4">Transform Your Business</h4>
+                    <h4 class="text-xl font-bold text-theory-blue mb-4">Deploy Surge Flow</h4>
                     <ul class="space-y-3 mb-8">
-                        <li class="flex items-start gap-3">
-                            <i data-lucide="check" class="w-5 h-5 text-theory-gold shrink-0 mt-0.5"></i>
-                            <span class="text-sm text-slate-600">Complete Strategic Rebrand</span>
+                        <li class="flex items-start gap-3 text-sm text-slate-600">
+                            <i data-lucide="check" class="w-5 h-5 text-theory-gold shrink-0 mt-0.5"></i> Agentic Suite Deployment
                         </li>
-                        <li class="flex items-start gap-3">
-                            <i data-lucide="check" class="w-5 h-5 text-theory-gold shrink-0 mt-0.5"></i>
-                            <span class="text-sm text-slate-600">High-Performance Web Infrastructure</span>
+                        <li class="flex items-start gap-3 text-sm text-slate-600">
+                            <i data-lucide="check" class="w-5 h-5 text-theory-gold shrink-0 mt-0.5"></i> Infrastructure Performance Audit
                         </li>
-                        <li class="flex items-start gap-3">
-                            <i data-lucide="check" class="w-5 h-5 text-theory-gold shrink-0 mt-0.5"></i>
-                            <span class="text-sm text-slate-600">Global Go-To-Market Execution</span>
+                        <li class="flex items-start gap-3 text-sm text-slate-600">
+                            <i data-lucide="check" class="w-5 h-5 text-theory-gold shrink-0 mt-0.5"></i> Autonomous GTM Execution
                         </li>
                     </ul>
-                    <a href="https://wa.me/94742304698?text=I%20want%20to%20apply%20for%20the%20Velocity%20Protocol" class="block w-full text-center py-3 bg-theory-blue text-white font-medium hover:bg-theory-gold transition-colors duration-300 uppercase tracking-wide text-sm">
-                        Apply Now
+                    <a href="https://wa.me/94742304698?text=Initiate%20Surge%20Flow%20Protocol" class="block w-full text-center py-3 bg-theory-blue text-white font-medium hover:bg-theory-gold transition-colors duration-300 uppercase tracking-wide text-xs">
+                        Initiate Protocol
                     </a>
                 </div>
             </div>
@@ -181,22 +133,23 @@
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
             <div class="flex items-center gap-2 z-50">
                 <div class="w-8 h-8 bg-theory-blue rounded-full flex items-center justify-center text-white font-bold text-lg font-serif">N</div>
-                <span class="text-lg md:text-xl font-bold tracking-tight text-theory-blue">NAKED THEORY</span>
+                <span class="text-lg md:text-xl font-bold tracking-tight text-theory-blue uppercase">Naked Theory</span>
             </div>
 
-            <div class="hidden md:flex items-center gap-10 text-sm font-medium text-slate-600">
+            <div class="hidden md:flex items-center gap-10 text-xs font-bold uppercase tracking-widest text-slate-500">
+                <a href="#surgeflow" class="text-theory-blue font-bold">Surge Flow</a>
                 <a href="#services" class="hover:text-theory-blue transition-colors">Services</a>
                 <a href="#partners" class="hover:text-theory-blue transition-colors">Archive</a>
-                <a href="#protocol" class="hover:text-theory-gold transition-colors font-semibold">The Protocol</a>
+                <a href="#protocol" class="hover:text-theory-gold transition-colors font-semibold">Protocol</a>
             </div>
 
             <div class="hidden md:flex items-center gap-6">
                 <a href="https://wa.me/94742304698" target="_blank" class="px-6 py-2.5 bg-theory-blue text-white text-xs font-bold tracking-widest uppercase hover:bg-theory-gold transition-colors shadow-lg shadow-theory-blue/10">
-                    Start Project
+                    Deploy Agent
                 </a>
             </div>
 
-            <button id="mobile-menu-btn" class="md:hidden text-theory-blue z-50 p-2 -mr-2">
+            <button id="mobile-menu-btn" class="md:hidden text-theory-blue z-50 p-2">
                 <i data-lucide="menu" class="w-8 h-8"></i>
             </button>
         </div>
@@ -204,37 +157,29 @@
 
     <div id="mobile-menu" class="fixed inset-0 z-40 bg-white pt-32 px-8 md:hidden flex flex-col h-screen">
         <div class="flex flex-col gap-8 text-3xl font-serif text-theory-blue">
+            <a href="#surgeflow" class="mobile-link text-theory-gold">Surge Flow</a>
             <a href="#services" class="mobile-link border-b border-gray-100 pb-6">Services</a>
             <a href="#partners" class="mobile-link border-b border-gray-100 pb-6">Archive</a>
-            <a href="#protocol" class="mobile-link border-b border-gray-100 pb-6 text-theory-gold">The Protocol</a>
-            <a href="#contact" class="mobile-link border-b border-gray-100 pb-6">Contact</a>
-        </div>
-        <div class="mt-auto pb-12">
-            <a href="https://wa.me/94742304698" class="flex items-center justify-center w-full py-5 bg-theory-blue text-white font-bold text-lg uppercase tracking-widest">
-                WhatsApp Us
-            </a>
+            <a href="#protocol" class="mobile-link text-theory-gold">The Protocol</a>
         </div>
     </div>
 
     <header class="relative pt-32 pb-20 md:pt-48 md:pb-40 px-6 overflow-hidden">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-            
             <div class="relative z-10 animate-fade-in-up">
+                <span class="text-theory-gold font-bold tracking-[0.3em] text-xs uppercase mb-4 block">/// The Agentic Revolution</span>
                 <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif text-theory-blue leading-[1.05] mb-8">
-                    Marketing Without<br/>
-                    <span class="italic font-light text-slate-400">The Bullsh*t.</span>
+                    Fire Your Marketing<br/>
+                    <span class="italic font-light text-slate-400">Department.</span>
                 </h1>
-                
                 <p class="text-lg text-slate-600 mb-10 max-w-md leading-relaxed font-light">
-                    We strip away the vanity metrics and hidden fees. 
-                    What remains is structural integrity and data-driven strategies that build empire-scale brands.
+                    Traditional marketing is slow and expensive. <strong>Surge Flow</strong> is our agentic AI infrastructure that replaces entire departments with autonomous growth engines.
                 </p>
-                
                 <div class="flex flex-col sm:flex-row gap-5">
-                    <a href="#services" class="px-10 py-4 bg-theory-blue text-white rounded-none hover:bg-theory-gold transition-colors flex items-center justify-center gap-3 text-sm font-bold tracking-widest uppercase">
-                        Our Expertise <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    <a href="#demo" class="px-10 py-4 bg-theory-blue text-white hover:bg-theory-gold transition-colors flex items-center justify-center gap-3 text-xs font-bold tracking-widest uppercase">
+                        Test The Agents <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </a>
-                    <a href="#protocol" class="px-10 py-4 border border-theory-blue text-theory-blue hover:bg-slate-50 transition-colors text-sm font-bold tracking-widest uppercase flex items-center justify-center">
+                    <a href="#protocol" class="px-10 py-4 border border-theory-blue text-theory-blue hover:bg-slate-50 transition-colors text-xs font-bold tracking-widest uppercase flex items-center justify-center">
                         The Protocol
                     </a>
                 </div>
@@ -242,32 +187,14 @@
 
             <div class="grid grid-cols-2 gap-4 h-[500px] md:h-[700px] w-full mt-8 md:mt-0 relative">
                 <div class="relative bg-slate-100 rounded-sm overflow-hidden shadow-2xl">
-                    <img 
-                        src="kandy.jpg" 
-                        alt="Kandy Cityscape" 
-                        class="w-full h-full object-cover grayscale opacity-90 scale-100 hover:scale-105 transition-transform duration-[2s] ease-in-out" 
-                    />
+                    <img src="kandy.jpg" alt="Kandy HQ" class="w-full h-full object-cover grayscale opacity-90 transition-transform duration-[2s]">
                     <div class="absolute inset-0 bg-gradient-to-t from-theory-blue/40 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-4 left-4">
-                        <span class="text-[10px] text-white/70 uppercase tracking-widest bg-theory-blue/40 backdrop-blur-md px-2 py-1">HQ / Kandy</span>
-                    </div>
+                    <div class="absolute bottom-4 left-4"><span class="text-[10px] text-white/70 uppercase tracking-widest bg-theory-blue/40 backdrop-blur-md px-2 py-1">HQ / Kandy</span></div>
                 </div>
-
-                <div class="relative bg-slate-100 rounded-sm overflow-hidden shadow-2xl">
-                    <img 
-                        src="colombo.webp" 
-                        alt="Colombo Cityscape" 
-                        class="w-full h-full object-cover grayscale opacity-90 scale-100 hover:scale-105 transition-transform duration-[2s] ease-in-out" 
-                    />
+                <div class="relative bg-slate-100 rounded-sm overflow-hidden shadow-2xl mt-12">
+                    <img src="colombo.webp" alt="Colombo Ops" class="w-full h-full object-cover grayscale opacity-90 transition-transform duration-[2s]">
                     <div class="absolute inset-0 bg-gradient-to-t from-theory-blue/40 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-4 left-4">
-                        <span class="text-[10px] text-white/70 uppercase tracking-widest bg-theory-blue/40 backdrop-blur-md px-2 py-1">Ops / Colombo</span>
-                    </div>
-                </div>
-                
-                <div class="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-md px-6 py-4 shadow-lg border-l-4 border-theory-blue z-20">
-                    <p class="text-[10px] text-slate-500 uppercase tracking-widest mb-1">Established Trust</p>
-                    <p class="text-xl font-serif text-theory-blue italic">Since 2023</p>
+                    <div class="absolute bottom-4 left-4"><span class="text-[10px] text-white/70 uppercase tracking-widest bg-theory-blue/40 backdrop-blur-md px-2 py-1">Ops / Colombo</span></div>
                 </div>
             </div>
         </div>
@@ -319,7 +246,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-slate-100 divide-y md:divide-y-0 md:divide-x divide-slate-100">
-                
                 <div class="bg-white p-12 group hover:bg-slate-50 transition-colors">
                     <i data-lucide="code-2" class="text-theory-blue w-8 h-8 mb-6"></i>
                     <h3 class="text-xl font-bold text-theory-blue mb-4">Web Development</h3>
@@ -347,212 +273,131 @@
         </div>
     </section>
 
-    <section id="partners" class="py-24 px-6 bg-slate-50 border-b border-slate-200">
+    <section id="demo" class="py-24 px-6 bg-theory-blue overflow-hidden">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif text-white mb-4">Command the Swarm</h2>
+                <p class="text-slate-400 max-w-xl mx-auto">Select an agent below to see how Surge Flow handles complex marketing operations in seconds.</p>
+            </div>
+
+            <div class="bg-[#050B14] rounded-xl border border-white/10 overflow-hidden shadow-2xl terminal-glow">
+                <div class="bg-white/5 border-b border-white/10 px-6 py-4 flex justify-between items-center text-[10px] font-mono text-slate-500 uppercase tracking-widest">
+                    <div class="flex gap-2"><div class="w-2.5 h-2.5 rounded-full bg-red-500/40"></div><div class="w-2.5 h-2.5 rounded-full bg-yellow-500/40"></div><div class="w-2.5 h-2.5 rounded-full bg-green-500/40"></div></div>
+                    <span>Surge Flow Protocol v1.0.4 — Naked Theory HQ</span>
+                    <div class="w-10"></div>
+                </div>
+
+                <div class="flex flex-col md:flex-row h-[550px]">
+                    <div class="w-full md:w-64 border-r border-white/10 p-4 space-y-3 bg-white/[0.02]">
+                        <button onclick="runAgent('creative')" id="btn-creative" class="w-full p-4 border border-white/5 text-left transition-all hover:bg-white/5 group">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="palette" class="w-4 h-4 text-theory-gold"></i>
+                                <span class="text-[10px] font-bold text-white uppercase tracking-widest">Creative Agent</span>
+                            </div>
+                        </button>
+                        <button onclick="runAgent('audit')" id="btn-audit" class="w-full p-4 border border-white/5 text-left transition-all hover:bg-white/5 group">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="shield-search" class="w-4 h-4 text-theory-gold"></i>
+                                <span class="text-[10px] font-bold text-white uppercase tracking-widest">Audit Agent</span>
+                            </div>
+                        </button>
+                        <button onclick="runAgent('stats')" id="btn-stats" class="w-full p-4 border border-white/5 text-left transition-all hover:bg-white/5 group">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="bar-chart-3" class="w-4 h-4 text-theory-gold"></i>
+                                <span class="text-[10px] font-bold text-white uppercase tracking-widest">Statistics Agent</span>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="flex-1 p-8 font-mono text-sm terminal-scroll overflow-y-auto bg-black/40 text-slate-300" id="terminal-output">
+                        <div class="text-theory-gold mb-2">> System Initialized. Nodes Online in Central & Western Provinces.</div>
+                        <div class="text-slate-500 mb-8">> Ready for agent deployment. Select a protocol...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners" class="py-24 px-6 bg-slate-50 border-y border-slate-200">
         <div class="max-w-7xl mx-auto">
             <div class="mb-16">
                 <span class="text-theory-gold font-bold tracking-widest text-xs uppercase mb-3 block">02 // Verified Archive</span>
-                <h2 class="text-4xl font-serif text-theory-blue mb-6">Strategic Partners</h2>
-                <p class="text-slate-500 text-sm max-w-2xl">A curated list of brands we have escalated.</p>
+                <h2 class="text-4xl font-serif text-theory-blue mb-6 leading-tight">Strategic Partners</h2>
+                <p class="text-slate-500 text-sm max-w-2xl font-light">A comprehensive list of brands Naked Theory has escalated through structural branding and agentic execution.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <div class="bg-white p-8 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all duration-500 group">
-                    <div class="h-16 mb-8 flex items-center justify-start relative transition-all">
-                        <img src="toyotalanka.png" alt="Toyota Lanka" class="max-h-full w-auto object-contain">
-                    </div>
-                    <h3 class="font-serif font-bold text-lg text-theory-blue mb-2">Toyota Lanka</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed mb-6">Digital innovation and reliability campaigns for a global automotive leader.</p>
-                    <div class="pt-4 border-t border-slate-100 flex justify-between items-center">
-                        <span class="text-[10px] text-slate-400 font-mono uppercase">Automotive</span>
-                        <span class="text-[10px] text-theory-gold font-bold">LK</span>
-                    </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="toyotalanka.png" alt="Toyota Lanka" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Toyota Lanka</h3><span class="text-[8px] text-slate-400 font-mono uppercase">Automotive</span></div>
                 </div>
-
-                <div class="bg-white p-8 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all duration-500 group">
-                    <div class="h-16 mb-8 flex items-center justify-start relative transition-all">
-                        <img src="optisoft.jpg" alt="OptiSoft" class="max-h-full w-auto object-contain">
-                    </div>
-                    <h3 class="font-serif font-bold text-lg text-theory-blue mb-2">OptiSoft LK</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed mb-6">Building high-performance POS & ERP Systems helping businesses scale globally.</p>
-                    <div class="pt-4 border-t border-slate-100 flex justify-between items-center">
-                        <span class="text-[10px] text-slate-400 font-mono uppercase">Software</span>
-                        <span class="text-[10px] text-theory-gold font-bold">Kandy</span>
-                    </div>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="optisoft.jpg" alt="OptiSoft" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">OptiSoft LK</h3><span class="text-[8px] text-slate-400 font-mono uppercase">Software</span></div>
                 </div>
-
-                <div class="bg-white p-8 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all duration-500 group">
-                    <div class="h-16 mb-8 flex items-center justify-start relative transition-all">
-                        <img src="goldenlandpiling.png" alt="Golden Land" class="max-h-full w-auto object-contain">
-                    </div>
-                    <h3 class="font-serif font-bold text-lg text-theory-blue mb-2">Golden Land Piling</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed mb-6">Specializing in Pile Foundation and MEP construction. Industry leaders.</p>
-                    <div class="pt-4 border-t border-slate-100 flex justify-between items-center">
-                        <span class="text-[10px] text-slate-400 font-mono uppercase">Engineering</span>
-                        <span class="text-[10px] text-theory-gold font-bold">LK</span>
-                    </div>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="goldenlandpiling.png" alt="Golden Land" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Golden Land</h3><span class="text-[8px] text-slate-400 font-mono uppercase">Engineering</span></div>
                 </div>
-
-                <div class="bg-white p-8 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all duration-500 group">
-                    <div class="h-16 mb-8 flex items-center justify-start relative transition-all">
-                        <img src="printronics.jpeg" alt="Printronics" class="max-h-full w-auto object-contain">
-                    </div>
-                    <h3 class="font-serif font-bold text-lg text-theory-blue mb-2">Printronics</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed mb-6">"To anyone who demands perfection." The preferred printing partner in Maldives.</p>
-                    <div class="pt-4 border-t border-slate-100 flex justify-between items-center">
-                        <span class="text-[10px] text-slate-400 font-mono uppercase">Printing</span>
-                        <span class="text-[10px] text-theory-gold font-bold">Maldives</span>
-                    </div>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="printronics.jpeg" alt="Printronics" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Printronics</h3><span class="text-[8px] text-slate-400 font-mono uppercase">Maldives</span></div>
                 </div>
-
-                <div class="bg-white p-8 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all duration-500 group">
-                    <div class="h-16 mb-8 flex items-center justify-start relative transition-all">
-                        <img src="immediateapexedge.png" alt="Immediate Apex" class="max-h-full w-auto object-contain">
-                    </div>
-                    <h3 class="font-serif font-bold text-lg text-theory-blue mb-2">Immediate Apex</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed mb-6">Revolutionary trading technology combining AI analysis with strategic precision.</p>
-                    <div class="pt-4 border-t border-slate-100 flex justify-between items-center">
-                        <span class="text-[10px] text-slate-400 font-mono uppercase">FinTech</span>
-                        <span class="text-[10px] text-theory-gold font-bold">Global</span>
-                    </div>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="immediateapexedge.png" alt="Immediate Apex" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Immediate Apex</h3><span class="text-[8px] text-slate-400 font-mono uppercase">FinTech</span></div>
                 </div>
-                
-                 <div class="bg-white p-8 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all duration-500 group">
-                    <div class="h-16 mb-8 flex items-center justify-start relative transition-all">
-                        <img src="roobinzz.png" alt="Roobinzz" class="max-h-full w-auto object-contain">
-                    </div>
-                    <h3 class="font-serif font-bold text-lg text-theory-blue mb-2">Roobinzz</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed mb-6">Redefining retail identity for the modern consumer through high-impact visuals.</p>
-                    <div class="pt-4 border-t border-slate-100 flex justify-between items-center">
-                        <span class="text-[10px] text-slate-400 font-mono uppercase">Retail</span>
-                        <span class="text-[10px] text-theory-gold font-bold">LK</span>
-                    </div>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="roobinzz.png" alt="Roobinzz" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Roobinzz</h3><span class="text-[8px] text-slate-400 font-mono uppercase">Retail</span></div>
                 </div>
-
-                 <div class="bg-white p-8 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all duration-500 group">
-                    <div class="h-16 mb-8 flex items-center justify-start relative transition-all">
-                        <img src="grandroobinzz.png" alt="Grand Roobinzz" class="max-h-full w-auto object-contain">
-                    </div>
-                    <h3 class="font-serif font-bold text-lg text-theory-blue mb-2">Grand Roobinzz</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed mb-6">Developed a luxurious, cohesive brand narrative for their flagship location.</p>
-                    <div class="pt-4 border-t border-slate-100 flex justify-between items-center">
-                        <span class="text-[10px] text-slate-400 font-mono uppercase">Luxury</span>
-                        <span class="text-[10px] text-theory-gold font-bold">LK</span>
-                    </div>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="grandroobinzz.png" alt="Grand Roobinzz" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Grand Roobinzz</h3><span class="text-[8px] text-slate-400 font-mono uppercase">Luxury</span></div>
                 </div>
-
-                <div class="bg-white p-8 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all duration-500 group">
-                    <div class="h-16 mb-8 flex items-center justify-start relative transition-all">
-                        <img src="moonslice.png" alt="Moonslice" class="max-h-full w-auto object-contain">
-                    </div>
-                    <h3 class="font-serif font-bold text-lg text-theory-blue mb-2">Moonslice</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed mb-6">Created a vibrant, youth-centric visual language for this cafe brand.</p>
-                    <div class="pt-4 border-t border-slate-100 flex justify-between items-center">
-                        <span class="text-[10px] text-slate-400 font-mono uppercase">F&B</span>
-                        <span class="text-[10px] text-theory-gold font-bold">LK</span>
-                    </div>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="moonslice.png" alt="Moonslice" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Moonslice</h3><span class="text-[8px] text-slate-400 font-mono uppercase">F&B</span></div>
                 </div>
-                
-                <div class="bg-white p-8 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all duration-500 group">
-                    <div class="h-16 mb-8 flex items-center justify-start relative transition-all">
-                        <img src="aurafamilygalore.png" alt="Aura Family" class="max-h-full w-auto object-contain">
-                    </div>
-                    <h3 class="font-serif font-bold text-lg text-theory-blue mb-2">Aura Family</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed mb-6">Designed a playful yet structured identity system for multi-venue entertainment.</p>
-                    <div class="pt-4 border-t border-slate-100 flex justify-between items-center">
-                        <span class="text-[10px] text-slate-400 font-mono uppercase">Entertainment</span>
-                        <span class="text-[10px] text-theory-gold font-bold">LK</span>
-                    </div>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="aurafamilygalore.png" alt="Aura Family" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Aura Family</h3><span class="text-[8px] text-slate-400 font-mono uppercase">Events</span></div>
                 </div>
-                
-                 <div class="bg-white p-8 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all duration-500 group">
-                    <div class="h-16 mb-8 flex items-center justify-start relative transition-all">
-                        <img src="sunrise.png" alt="Sunrise" class="max-h-full w-auto object-contain">
-                    </div>
-                    <h3 class="font-serif font-bold text-lg text-theory-blue mb-2">Sunrise</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed mb-6">Rebranded a legacy property developer to appeal to a modern demographic.</p>
-                    <div class="pt-4 border-t border-slate-100 flex justify-between items-center">
-                        <span class="text-[10px] text-slate-400 font-mono uppercase">Real Estate</span>
-                        <span class="text-[10px] text-theory-gold font-bold">LK</span>
-                    </div>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="sunrise.png" alt="Sunrise" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Sunrise</h3><span class="text-[8px] text-slate-400 font-mono uppercase">Real Estate</span></div>
                 </div>
-                
-                <div class="bg-white p-8 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all duration-500 group">
-                    <div class="h-16 mb-8 flex items-center justify-start relative transition-all">
-                        <img src="microelectronics.png" alt="Micro Electronics" class="max-h-full w-auto object-contain">
-                    </div>
-                    <h3 class="font-serif font-bold text-lg text-theory-blue mb-2">Micro Electronics</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed mb-6">Precision electronics and components powering local tech needs.</p>
-                    <div class="pt-4 border-t border-slate-100 flex justify-between items-center">
-                        <span class="text-[10px] text-slate-400 font-mono uppercase">Electronics</span>
-                        <span class="text-[10px] text-theory-gold font-bold">Gampola</span>
-                    </div>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="microelectronics.png" alt="Micro Electronics" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Micro Elec.</h3><span class="text-[8px] text-slate-400 font-mono uppercase">Electronics</span></div>
                 </div>
-                
-                <div class="bg-white p-8 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all duration-500 group">
-                    <div class="h-16 mb-8 flex items-center justify-start relative transition-all">
-                        <img src="suneramedical.png" alt="Sunera Medical" class="max-h-full w-auto object-contain">
-                    </div>
-                    <h3 class="font-serif font-bold text-lg text-theory-blue mb-2">Sunera Medical</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed mb-6">Trusted pharmaceutical care. Your health, our priority.</p>
-                    <div class="pt-4 border-t border-slate-100 flex justify-between items-center">
-                        <span class="text-[10px] text-slate-400 font-mono uppercase">Healthcare</span>
-                        <span class="text-[10px] text-theory-gold font-bold">LK</span>
-                    </div>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="suneramedical.png" alt="Sunera Medical" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Sunera Med.</h3><span class="text-[8px] text-slate-400 font-mono uppercase">Healthcare</span></div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <section id="protocol" class="py-24 px-6 bg-theory-blue text-white relative overflow-hidden">
         <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;"></div>
-        
         <div class="max-w-5xl mx-auto relative z-10 border border-white/10 bg-white/5 backdrop-blur-md p-10 md:p-16">
             <div class="flex flex-col lg:flex-row justify-between gap-16">
-                
                 <div class="flex-1">
-                    <span class="text-theory-gold font-bold tracking-widest text-xs uppercase mb-6 block">/// Classified Offer</span>
-                    <h2 class="text-5xl md:text-6xl font-serif leading-none mb-8">The Velocity<br>Protocol</h2>
-                    
-                    <p class="text-slate-300 text-lg mb-8 leading-relaxed">
-                        A comprehensive 90-day sprint designed to completely restructure your market presence. We audit, rebuild, and launch your brand's digital infrastructure, positioning you for dominance.
+                    <span class="text-theory-gold font-bold tracking-widest text-xs uppercase mb-6 block">/// Velocity Protocol</span>
+                    <h2 class="text-5xl md:text-6xl font-serif leading-none mb-8 italic font-light">Deploy in 90 Days.</h2>
+                    <p class="text-slate-300 text-lg mb-10 leading-relaxed font-light">
+                        A total structural overhaul. We audit your infrastructure, rebuild your brand, and deploy Surge Flow agents to take over your marketing operations.
                     </p>
-
-                    <div class="space-y-6 mb-10">
-                        <div class="flex gap-4">
-                            <span class="w-2 h-2 mt-2 bg-theory-gold rounded-full"></span>
-                            <div>
-                                <h4 class="font-bold text-white">Complete Brand Overhaul</h4>
-                                <p class="text-sm text-slate-400 mt-1">Visual identity, voice, and narrative restructuring.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <span class="w-2 h-2 mt-2 bg-theory-gold rounded-full"></span>
-                            <div>
-                                <h4 class="font-bold text-white">Full-Stack Development</h4>
-                                <p class="text-sm text-slate-400 mt-1">Enterprise-grade website and systems integration.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <span class="w-2 h-2 mt-2 bg-theory-gold rounded-full"></span>
-                            <div>
-                                <h4 class="font-bold text-white">6-Month Growth Roadmap</h4>
-                                <p class="text-sm text-slate-400 mt-1">Detailed GTM strategy and content calendar.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a href="https://wa.me/94742304698?text=Initiate%20Protocol" class="inline-block w-full md:w-auto text-center px-10 py-5 bg-white text-theory-blue font-bold uppercase tracking-widest hover:bg-theory-gold hover:text-white transition-colors duration-300">
+                    <a href="https://wa.me/94742304698?text=Initiate%20Protocol" class="inline-block px-12 py-5 bg-white text-theory-blue font-bold uppercase tracking-widest hover:bg-theory-gold hover:text-white transition-all shadow-xl">
                         Initiate Protocol
                     </a>
                 </div>
-
                 <div class="lg:w-1/3 flex flex-col justify-center border-t lg:border-t-0 lg:border-l border-white/10 pt-8 lg:pt-0 lg:pl-16">
                     <div class="font-mono">
-                        <div class="text-sm text-gray-400 mb-2">Secure Access Fee</div>
+                        <div class="text-xs text-gray-400 mb-2 font-bold uppercase tracking-tighter">Secure Setup Fee</div>
                         <div class="text-5xl font-bold mb-3" id="protocol-price-display">LKR 0</div>
-                        <div class="text-xs text-theory-gold uppercase tracking-widest">Timeline: 90 Days</div>
+                        <div class="text-[10px] text-theory-gold uppercase tracking-[0.2em]">Deployment Node: Active</div>
                     </div>
                 </div>
             </div>
@@ -561,50 +406,31 @@
 
     <footer id="contact" class="bg-white border-t border-slate-200 pt-20 pb-10 px-6 text-sm">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-            
             <div class="col-span-1 md:col-span-2 pr-8">
                 <div class="w-10 h-10 bg-theory-blue rounded-full flex items-center justify-center text-white font-bold text-xl font-serif mb-6">N</div>
                 <h2 class="text-4xl font-serif text-theory-blue mb-6">No Fluff.<br>Just Results.</h2>
-                <a href="mailto:hello@nakedtheory.pro" class="text-lg font-medium border-b-2 border-theory-blue pb-1 hover:text-theory-gold hover:border-theory-gold transition-colors">
-                    hello@nakedtheory.pro
-                </a>
-                <p class="text-slate-500 mt-6 text-xs leading-relaxed max-w-sm">
-                    Strategic branding and performance marketing based in Kandy, Sri Lanka. Serving bold businesses globally.
-                </p>
+                <a href="mailto:hello@nakedtheory.pro" class="text-lg font-medium border-b-2 border-theory-blue pb-1 hover:text-theory-gold transition-colors font-serif italic">hello@nakedtheory.pro</a>
             </div>
-
             <div>
-                <h4 class="font-bold text-theory-blue mb-6 uppercase tracking-wider text-xs">Expertise</h4>
-                <div class="space-y-6">
-                    <div>
-                        <h5 class="font-bold text-theory-blue">Performance Media</h5>
-                        <p class="text-xs text-slate-500 mt-1">Paid acquisition campaigns on Meta & Google focused on ROAS.</p>
-                    </div>
-                    <div>
-                        <h5 class="font-bold text-theory-blue">SEO & Content</h5>
-                        <p class="text-xs text-slate-500 mt-1">Organic growth strategies and technical SEO for long-term visibility.</p>
-                    </div>
-                    <div>
-                        <h5 class="font-bold text-theory-blue">Brand Strategy</h5>
-                        <p class="text-xs text-slate-500 mt-1">Identity development, market positioning, and voice definition.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div>
-                <h4 class="font-bold text-theory-blue mb-6 uppercase tracking-wider text-xs">Connect</h4>
+                <h4 class="font-bold text-theory-blue mb-6 uppercase tracking-widest text-xs">The Suite</h4>
                 <ul class="space-y-4 text-slate-500 font-medium">
-                    <li><a href="https://wa.me/94742304698" target="_blank" class="hover:text-green-600 flex items-center gap-2 transition-colors"><i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp</a></li>
-                    <li><a href="#" class="hover:text-blue-600 flex items-center gap-2 transition-colors"><i data-lucide="facebook" class="w-4 h-4"></i> Facebook</a></li>
-                    <li><a href="#" class="hover:text-pink-600 flex items-center gap-2 transition-colors"><i data-lucide="instagram" class="w-4 h-4"></i> Instagram</a></li>
-                    <li><a href="#" class="hover:text-blue-700 flex items-center gap-2 transition-colors"><i data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn</a></li>
+                    <li>Surge Flow AI</li>
+                    <li>Agentic Advertising</li>
+                    <li>Structural Branding</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-theory-blue mb-6 uppercase tracking-widest text-xs">Connect</h4>
+                <ul class="space-y-4 text-slate-500 font-medium font-serif italic">
+                    <li><a href="https://wa.me/94742304698" target="_blank" class="hover:text-green-600 transition-colors">WhatsApp</a></li>
+                    <li>LinkedIn</li>
+                    <li>Instagram</li>
                 </ul>
             </div>
         </div>
-        
-        <div class="max-w-7xl mx-auto border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400">
-            <p>&copy; 2025 Naked Theory Inc. Kandy & Colombo, LK.</p>
-            <p class="mt-2 md:mt-0">Radical Transparency Protocol Initiated.</p>
+        <div class="max-w-7xl mx-auto border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] text-slate-400 uppercase tracking-widest">
+            <p>&copy; 2026 Naked Theory Inc. Kandy & Colombo Nodes.</p>
+            <p class="mt-2 md:mt-0">Agentic Protocol Initiated.</p>
         </div>
     </footer>
 
@@ -612,25 +438,20 @@
         lucide.createIcons();
         gsap.registerPlugin(ScrollTrigger);
 
-        // Function to animate price counters
+        const PROTOCOL_PRICE = 20000;
+
         function animatePrice(elementId, targetAmount) {
             const element = document.getElementById(elementId);
             if (!element) return;
-            
             const proxy = { val: 0 };
             gsap.to(proxy, {
-                val: targetAmount,
-                duration: 2,
-                ease: "power2.out",
-                onUpdate: () => {
-                    element.innerText = "LKR " + Math.ceil(proxy.val).toLocaleString();
-                }
+                val: targetAmount, duration: 2, ease: "power2.out",
+                onUpdate: () => { element.innerText = "LKR " + Math.ceil(proxy.val).toLocaleString(); }
             });
         }
 
-        // Navbar Scroll Effect
-        const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
             if (window.scrollY > 20) {
                 navbar.classList.add('bg-white/95', 'backdrop-blur-md', 'shadow-sm', 'py-4');
                 navbar.classList.remove('bg-transparent', 'py-6');
@@ -640,74 +461,77 @@
             }
         });
 
-        // Mobile Menu
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
-        let isMenuOpen = false;
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+            mobileBtn.innerHTML = mobileMenu.classList.contains('open') ? '<i data-lucide="x" class="w-8 h-8"></i>' : '<i data-lucide="menu" class="w-8 h-8"></i>';
+            lucide.createIcons();
+        });
 
-        function toggleMenu() {
-            isMenuOpen = !isMenuOpen;
-            if (isMenuOpen) {
-                mobileMenu.classList.add('open');
-                mobileMenuBtn.innerHTML = '<i data-lucide="x" class="w-8 h-8"></i>';
-                lucide.createIcons();
-                document.body.style.overflow = 'hidden';
-            } else {
-                mobileMenu.classList.remove('open');
-                mobileMenuBtn.innerHTML = '<i data-lucide="menu" class="w-8 h-8"></i>';
-                lucide.createIcons();
-                document.body.style.overflow = '';
-            }
-        }
-        mobileMenuBtn.addEventListener('click', toggleMenu);
-        mobileLinks.forEach(link => link.addEventListener('click', () => { if(isMenuOpen) toggleMenu(); }));
-
-        // Animations
-        const sections = document.querySelectorAll('section');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('opacity-100', 'translate-y-0');
-                    entry.target.classList.remove('opacity-0', 'translate-y-10');
-                    
-                    // Trigger Protocol Price Animation if looking at protocol section
-                    if (entry.target.id === 'protocol') {
-                        animatePrice('protocol-price-display', 20000);
-                    }
+                    if (entry.target.id === 'protocol') animatePrice('protocol-price-display', PROTOCOL_PRICE);
                 }
             });
         }, { threshold: 0.1 });
 
-        sections.forEach(sec => {
-            sec.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+        document.querySelectorAll('section').forEach(sec => {
+            sec.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
             observer.observe(sec);
         });
 
-        // Popup Logic
-        const popup = document.getElementById('offer-popup');
-        const popupCard = document.getElementById('offer-card');
-        const closeBtn = document.getElementById('close-popup');
-
-        // Show after 15 seconds
         setTimeout(() => {
-            popup.classList.remove('hidden');
-            // Small delay to allow display:block to apply before opacity transition
+            document.getElementById('offer-popup').classList.remove('hidden');
             setTimeout(() => {
-                popupCard.classList.remove('opacity-0', 'scale-95');
-                popupCard.classList.add('opacity-100', 'scale-100');
-                // Animate Popup Price
-                animatePrice('popup-price-display', 20000);
+                document.getElementById('offer-card').classList.remove('opacity-0', 'scale-95');
+                document.getElementById('offer-card').classList.add('opacity-100', 'scale-100');
+                animatePrice('popup-price-display', PROTOCOL_PRICE);
             }, 10);
         }, 15000);
 
-        closeBtn.addEventListener('click', () => {
-            popupCard.classList.remove('opacity-100', 'scale-100');
-            popupCard.classList.add('opacity-0', 'scale-95');
-            setTimeout(() => {
-                popup.classList.add('hidden');
-            }, 300);
+        document.getElementById('close-popup').addEventListener('click', () => {
+            document.getElementById('offer-card').classList.add('opacity-0', 'scale-95');
+            setTimeout(() => document.getElementById('offer-popup').classList.add('hidden'), 300);
         });
+
+        const agentOutputs = {
+            creative: [
+                { t: "Initiating Creative Agent...", c: "theory-gold" },
+                { t: "Generating 500 ad variants for multi-channel deployment...", c: "slate-500" },
+                { t: "Creative Engine Output:", c: "white font-bold" },
+                { t: "  - Hook: 'Fire your marketing team. Deploy an AI swarm.'", c: "slate-300" },
+                { t: "Deployment Ready. Estimated ROAS improvement: 42%.", c: "green-400 font-bold" }
+            ],
+            audit: [
+                { t: "Initiating Audit Agent...", c: "theory-gold" },
+                { t: "Scanning nodes at Kandy & Colombo centers...", c: "slate-500" },
+                { t: "Fixing checkout friction and latencies...", c: "slate-500" },
+                { t: "Infrastructure secured. Velocity +18%.", c: "green-400 font-bold" }
+            ],
+            stats: [
+                { t: "Initiating Statistics Agent...", c: "theory-gold" },
+                { t: "Syncing real-time revenue streams...", c: "slate-500" },
+                { t: "Predictive Forecast: +24% revenue over 30 days.", c: "green-400 font-bold" }
+            ]
+        };
+
+        function runAgent(type) {
+            const terminal = document.getElementById('terminal-output');
+            ['creative', 'audit', 'stats'].forEach(b => document.getElementById(`btn-${b}`).classList.remove('agent-active'));
+            document.getElementById(`btn-${type}`).classList.add('agent-active');
+            terminal.innerHTML = '<div class="text-theory-gold animate-pulse mb-4">> DEPLOYING ' + type.toUpperCase() + ' AGENT...</div>';
+            let i = 0; const seq = agentOutputs[type];
+            const interval = setInterval(() => {
+                if (i < seq.length) {
+                    const line = document.createElement('div'); line.className = `mb-2 text-${seq[i].c}`;
+                    line.innerText = `> ${seq[i].t}`; terminal.appendChild(line);
+                    terminal.scrollTop = terminal.scrollHeight; i++;
+                } else { clearInterval(interval); }
+            }, 600);
+        }
     </script>
 </body>
 </html>
