@@ -4,214 +4,219 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <title>Naked Theory | Surge Flow: Autonomous Market Domination</title>
-    <meta name="description" content="Naked Theory: The Agentic Marketing Collective. Deploying autonomous growth engines, content creation, and AI automation starting at LKR 30,000.">
-    <meta name="keywords" content="AI Marketing Sri Lanka, Agentic AI, Surge Flow, Naked Theory, Digital Marketing Kandy, Marketing Automation Colombo">
-    
-    <meta property="og:title" content="Naked Theory | The Agentic Revolution">
-    <meta property="og:description" content="Autonomous marketing infrastructure starting at LKR 30,000.">
-    <meta property="og:image" content="logo.jpeg">
+    <title>Naked Theory | Surge Flow: The Agentic Marketing Revolution</title>
+    <meta name="description" content="Dominate your market with Naked Theory. Home to Surge Flow, the agentic AI solution replacing traditional marketing departments with autonomous growth engines.">
+    <meta name="keywords" content="Surge Flow AI, Marketing Agency Kandy, Agentic AI Marketing, Digital Marketing Kandy, AI Marketing Sri Lanka, Naked Theory Pro">
+    <meta name="author" content="Naked Theory">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://nakedtheory.pro">
     <link rel="icon" type="image/jpeg" href="logo.jpeg">
-
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Playfair Display', 'serif'], mono: ['Fira Code', 'monospace'] },
-                    colors: { 'theory-dark': '#070A13', 'theory-blue': '#0C1E30', 'theory-gold': '#C5A059' }
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    colors: {
+                        'theory-dark': '#0F172A',
+                        'theory-blue': '#0C1E30',
+                        'theory-cream': '#FAFAF9',
+                        'theory-gold': '#C5A059',
+                    }
                 }
             }
         }
     </script>
-
+    
     <style>
         html { scroll-behavior: smooth; }
-        body { background-color: #FAFAF9; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
-        .scanline { background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, .05) 50%); background-size: 100% 4px; pointer-events: none; }
-        #chat-window { transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1); transform: translateY(20px); opacity: 0; pointer-events: none; }
-        #chat-window.active { transform: translateY(0); opacity: 1; pointer-events: all; }
-        .client-card { transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
-        .client-card:hover { transform: translateY(-5px); border-color: #C5A059; }
+        body { -webkit-font-smoothing: antialiased; }
+        .terminal-glow { box-shadow: 0 0 30px rgba(197, 160, 89, 0.15); }
+        .agent-active { border-color: #C5A059 !important; background: rgba(197, 160, 89, 0.1); }
+        .terminal-scroll::-webkit-scrollbar { width: 4px; }
+        .terminal-scroll::-webkit-scrollbar-track { background: transparent; }
+        .terminal-scroll::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+        #chat-window { transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); transform: translateY(20px); opacity: 0; pointer-events: none; }
+        #chat-window.open { transform: translateY(0); opacity: 1; pointer-events: all; }
     </style>
 </head>
-<body class="font-sans text-slate-900">
+<body class="font-sans text-slate-800 bg-theory-cream min-h-screen selection:bg-theory-blue selection:text-white overflow-x-hidden">
 
-    <nav id="navbar" class="fixed w-full z-[60] transition-all duration-500 py-6 px-10">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-theory-blue flex items-center justify-center text-white font-serif text-xl font-bold rounded-sm shadow-xl">N</div>
-                <span class="text-[10px] font-bold tracking-[0.4em] uppercase text-theory-blue">Naked Theory</span>
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4 md:py-6">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-theory-blue rounded-full flex items-center justify-center text-white font-bold text-lg font-serif">N</div>
+                <span class="text-lg md:text-xl font-bold tracking-tight text-theory-blue uppercase">Naked Theory</span>
             </div>
-            <div class="hidden md:flex gap-10 items-center text-[10px] font-bold uppercase tracking-widest text-slate-400">
+            <div class="hidden md:flex items-center gap-10 text-xs font-bold uppercase tracking-widest text-slate-500">
                 <a href="#services" class="hover:text-theory-blue transition-colors">Capabilities</a>
                 <a href="#partners" class="hover:text-theory-blue transition-colors">Archive</a>
-                <a href="#protocol" class="hover:text-theory-gold transition-colors">The Suite</a>
-                <a href="https://wa.me/94742304698" class="px-5 py-2 bg-theory-blue text-white hover:bg-theory-gold transition-all shadow-lg">Deploy</a>
+                <a href="#protocol" class="hover:text-theory-gold transition-colors font-semibold">The Suite</a>
             </div>
+            <a href="https://wa.me/94742304698" class="hidden md:block px-6 py-2.5 bg-theory-blue text-white text-xs font-bold tracking-widest uppercase hover:bg-theory-gold transition-colors">
+                Deploy Agent
+            </a>
         </div>
     </nav>
 
-    <header class="relative min-h-screen flex items-center pt-20 px-6 bg-[#F5F5F4] overflow-hidden">
-        <div class="absolute inset-0 scanline opacity-30"></div>
-        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 relative z-10">
+    <header class="relative pt-32 pb-20 md:pt-48 md:pb-40 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
             <div class="reveal">
-                <div class="flex items-center gap-3 mb-6">
-                    <span class="h-[1px] w-12 bg-theory-gold"></span>
-                    <span class="text-[10px] font-mono uppercase tracking-[0.3em] text-theory-gold animate-pulse">Neural Link Active</span>
-                </div>
-                <h1 class="text-6xl md:text-8xl font-serif text-theory-blue leading-tight mb-8">
-                    Absolute <br/><span class="italic text-slate-400 font-light">Market Domination.</span>
+                <span class="text-theory-gold font-bold tracking-[0.3em] text-xs uppercase mb-4 block">/// Agentic Marketing Suite</span>
+                <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif text-theory-blue leading-[1.05] mb-8">
+                    Fire Your Marketing<br/>
+                    <span class="italic font-light text-slate-400">Department.</span>
                 </h1>
-                <p class="text-lg text-slate-500 max-w-md leading-relaxed mb-12 font-light">
-                    Legacy marketing is dead. We architect **Surge Flow**—an agentic ecosystem for autonomous content creation, account handling, and growth automation.
+                <p class="text-lg text-slate-600 mb-10 max-w-md leading-relaxed font-light">
+                    Autonomous content, professional account handling, and AI automation. **Surge Flow** replaces slow human legacy with raw agentic speed.
                 </p>
-                <div class="flex flex-wrap gap-6">
-                    <button onclick="document.getElementById('protocol').scrollIntoView()" class="px-10 py-5 bg-theory-blue text-white text-[10px] font-bold uppercase tracking-widest hover:bg-theory-gold transition-all shadow-2xl">
-                        Initiate Agentic Suite
-                    </button>
+                <div class="flex flex-col sm:flex-row gap-5">
+                    <a href="#protocol" class="px-10 py-4 bg-theory-blue text-white hover:bg-theory-gold transition-colors text-xs font-bold tracking-widest uppercase text-center">
+                        Initiate Protocol
+                    </a>
                     <div class="flex flex-col justify-center border-l border-slate-200 pl-6">
-                        <span class="text-[10px] text-slate-400 uppercase tracking-tighter">Node Starting Price</span>
-                        <span class="font-mono font-bold text-theory-blue">LKR 30,000.00</span>
+                        <span class="text-[10px] text-slate-400 uppercase tracking-tighter">Baseline Starting Price</span>
+                        <span class="font-mono font-bold text-theory-blue text-xl">LKR 30,000</span>
                     </div>
                 </div>
             </div>
-            
-            <div class="relative hidden lg:block reveal">
-                <div class="absolute inset-0 bg-theory-gold/10 rounded-full blur-3xl animate-pulse"></div>
-                <img src="logo.jpeg" class="relative z-10 w-full h-[550px] object-cover grayscale brightness-110 shadow-2xl border border-white/20 rounded-sm">
+            <div class="relative hidden md:block reveal">
+                <img src="logo.jpeg" alt="Naked Theory" class="w-full h-[600px] object-cover grayscale brightness-105 shadow-2xl">
+                <div class="absolute -bottom-6 -left-6 bg-theory-blue p-8 text-white hidden lg:block">
+                    <p class="text-xs uppercase tracking-[0.2em] font-bold text-theory-gold">Deployment Node</p>
+                    <p class="font-serif text-2xl italic">Active v1.2</p>
+                </div>
             </div>
         </div>
     </header>
 
-    <section id="services" class="py-32 px-6 bg-white border-y border-slate-100">
+    <section id="services" class="py-24 px-6 bg-white">
         <div class="max-w-7xl mx-auto">
-            <div class="grid md:grid-cols-3 gap-16">
-                <div class="reveal">
-                    <i data-lucide="pen-tool" class="text-theory-gold w-8 h-8 mb-6"></i>
-                    <h3 class="text-2xl font-serif mb-4">Content Creation</h3>
-                    <p class="text-sm text-slate-500 leading-relaxed font-light">High-end visual assets generated through intent-based algorithms. We produce content that executes your strategy with zero friction.</p>
+            <div class="mb-20">
+                <span class="text-theory-gold font-bold tracking-widest text-xs uppercase mb-3 block">01 // Capabilities</span>
+                <h2 class="text-4xl md:text-5xl font-serif text-theory-blue">The Suite</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-slate-100 divide-y md:divide-y-0 md:divide-x divide-slate-100">
+                <div class="p-12 group hover:bg-slate-50 transition-colors">
+                    <i data-lucide="video" class="text-theory-blue w-8 h-8 mb-6"></i>
+                    <h3 class="text-xl font-bold text-theory-blue mb-4">Content Creation</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">High-conversion visual assets and video production optimized for rapid algorithmic growth.</p>
                 </div>
-                <div class="reveal">
-                    <i data-lucide="activity" class="text-theory-gold w-8 h-8 mb-6"></i>
-                    <h3 class="text-2xl font-serif mb-4">Account Handling</h3>
-                    <p class="text-sm text-slate-500 leading-relaxed font-light">Strategic profile management. We deploy human-centered oversight powered by agentic distribution protocols to dominate feeds.</p>
+                <div class="p-12 group hover:bg-slate-50 transition-colors">
+                    <i data-lucide="users" class="text-theory-blue w-8 h-8 mb-6"></i>
+                    <h3 class="text-xl font-bold text-theory-blue mb-4">Account Handling</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">End-to-end social and professional profile management with a focus on LTV and engagement.</p>
                 </div>
-                <div class="reveal">
-                    <i data-lucide="cpu" class="text-theory-gold w-8 h-8 mb-6"></i>
-                    <h3 class="text-2xl font-serif mb-4">AI Automation</h3>
-                    <p class="text-sm text-slate-500 leading-relaxed font-light">The end of manual labor. Custom AI agents handle repetitive workflows, lead qualification, and performance tracking 24/7.</p>
+                <div class="p-12 group hover:bg-slate-50 transition-colors">
+                    <i data-lucide="cpu" class="text-theory-blue w-8 h-8 mb-6"></i>
+                    <h3 class="text-xl font-bold text-theory-blue mb-4">AI Automation</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Custom agentic workflows that replace manual bottlenecks with 24/7 autonomous execution.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="partners" class="py-32 px-6 bg-[#FAFAF9]">
+    <section id="partners" class="py-24 px-6 bg-slate-50 border-y border-slate-200">
         <div class="max-w-7xl mx-auto">
-            <div class="mb-20 text-center">
-                <span class="text-theory-gold font-mono text-[10px] uppercase tracking-widest mb-4 block">Proven Deployments</span>
-                <h2 class="text-4xl font-serif text-theory-blue">Strategic Archive</h2>
+            <div class="mb-16">
+                <span class="text-theory-gold font-bold tracking-widest text-xs uppercase mb-3 block">02 // Verified Archive</span>
+                <h2 class="text-4xl font-serif text-theory-blue mb-4">Strategic Partners</h2>
+                <p class="text-slate-500 text-sm max-w-2xl font-light italic">Previous escalations through structural branding and agentic execution.</p>
             </div>
-            
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                <div class="client-card bg-white p-6 border border-slate-200 flex flex-col justify-between min-h-[140px]">
-                    <span class="text-[9px] font-mono text-slate-400">01 / AUTO</span>
-                    <h4 class="font-bold text-xs uppercase text-theory-blue tracking-tight">Toyota Lanka</h4>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
+                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Toyota Lanka</div>
+                    <span class="text-[8px] text-slate-400 font-mono uppercase">Automotive</span>
                 </div>
-                <div class="client-card bg-white p-6 border border-slate-200 flex flex-col justify-between min-h-[140px]">
-                    <span class="text-[9px] font-mono text-slate-400">02 / TECH</span>
-                    <h4 class="font-bold text-xs uppercase text-theory-blue tracking-tight">OptiSoft LK</h4>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
+                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">OptiSoft LK</div>
+                    <span class="text-[8px] text-slate-400 font-mono uppercase">Software</span>
                 </div>
-                <div class="client-card bg-white p-6 border border-slate-200 flex flex-col justify-between min-h-[140px]">
-                    <span class="text-[9px] font-mono text-slate-400">03 / ENG</span>
-                    <h4 class="font-bold text-xs uppercase text-theory-blue tracking-tight">Golden Land</h4>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
+                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Golden Land</div>
+                    <span class="text-[8px] text-slate-400 font-mono uppercase">Engineering</span>
                 </div>
-                <div class="client-card bg-white p-6 border border-slate-200 flex flex-col justify-between min-h-[140px]">
-                    <span class="text-[9px] font-mono text-slate-400">04 / GLOBAL</span>
-                    <h4 class="font-bold text-xs uppercase text-theory-blue tracking-tight">Printronics</h4>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
+                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Printronics</div>
+                    <span class="text-[8px] text-slate-400 font-mono uppercase">Global</span>
                 </div>
-                <div class="client-card bg-white p-6 border border-slate-200 flex flex-col justify-between min-h-[140px]">
-                    <span class="text-[9px] font-mono text-slate-400">05 / FIN</span>
-                    <h4 class="font-bold text-xs uppercase text-theory-blue tracking-tight">Immediate Apex</h4>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
+                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Immediate Apex</div>
+                    <span class="text-[8px] text-slate-400 font-mono uppercase">FinTech</span>
                 </div>
-                <div class="client-card bg-white p-6 border border-slate-200 flex flex-col justify-between min-h-[140px]">
-                    <span class="text-[9px] font-mono text-slate-400">06 / RETAIL</span>
-                    <h4 class="font-bold text-xs uppercase text-theory-blue tracking-tight">Roobinzz</h4>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
+                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Roobinzz</div>
+                    <span class="text-[8px] text-slate-400 font-mono uppercase">Retail</span>
                 </div>
-                <div class="client-card bg-white p-6 border border-slate-200 flex flex-col justify-between min-h-[140px]">
-                    <span class="text-[9px] font-mono text-slate-400">07 / LUXE</span>
-                    <h4 class="font-bold text-xs uppercase text-theory-blue tracking-tight">Grand Roobinzz</h4>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
+                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Grand Roobinzz</div>
+                    <span class="text-[8px] text-slate-400 font-mono uppercase">Luxury</span>
                 </div>
-                <div class="client-card bg-white p-6 border border-slate-200 flex flex-col justify-between min-h-[140px]">
-                    <span class="text-[9px] font-mono text-slate-400">08 / F&B</span>
-                    <h4 class="font-bold text-xs uppercase text-theory-blue tracking-tight">Moonslice</h4>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
+                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Moonslice</div>
+                    <span class="text-[8px] text-slate-400 font-mono uppercase">F&B</span>
                 </div>
-                <div class="client-card bg-white p-6 border border-slate-200 flex flex-col justify-between min-h-[140px]">
-                    <span class="text-[9px] font-mono text-slate-400">09 / EVENT</span>
-                    <h4 class="font-bold text-xs uppercase text-theory-blue tracking-tight">Aura Family</h4>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
+                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Aura Family</div>
+                    <span class="text-[8px] text-slate-400 font-mono uppercase">Events</span>
                 </div>
-                <div class="client-card bg-white p-6 border border-slate-200 flex flex-col justify-between min-h-[140px]">
-                    <span class="text-[9px] font-mono text-slate-400">10 / REALTY</span>
-                    <h4 class="font-bold text-xs uppercase text-theory-blue tracking-tight">Sunrise</h4>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
+                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Sunrise</div>
+                    <span class="text-[8px] text-slate-400 font-mono uppercase">Real Estate</span>
                 </div>
-                <div class="client-card bg-white p-6 border border-slate-200 flex flex-col justify-between min-h-[140px]">
-                    <span class="text-[9px] font-mono text-slate-400">11 / ELEC</span>
-                    <h4 class="font-bold text-xs uppercase text-theory-blue tracking-tight">Micro Elec.</h4>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
+                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Micro Elec.</div>
+                    <span class="text-[8px] text-slate-400 font-mono uppercase">Electronics</span>
                 </div>
-                <div class="client-card bg-white p-6 border border-slate-200 flex flex-col justify-between min-h-[140px]">
-                    <span class="text-[9px] font-mono text-slate-400">12 / HEALTH</span>
-                    <h4 class="font-bold text-xs uppercase text-theory-blue tracking-tight">Sunera Med.</h4>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
+                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Sunera Medical</div>
+                    <span class="text-[8px] text-slate-400 font-mono uppercase">Healthcare</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="protocol" class="py-32 px-6 bg-theory-dark text-white relative overflow-hidden">
-        <div class="max-w-4xl mx-auto relative z-10 text-center">
-            <div class="inline-block px-4 py-1 border border-theory-gold/30 rounded-full text-[9px] uppercase tracking-widest text-theory-gold mb-8">Offer Update: Velocity Protocol Concluded</div>
-            <h2 class="text-5xl md:text-7xl font-serif mb-12 italic font-light">Agentic Marketing Suite</h2>
-            
-            <div class="bg-white/5 backdrop-blur-xl border border-white/10 p-10 md:p-16 text-left">
-                <div class="grid md:grid-cols-2 gap-12">
-                    <div>
-                        <h4 class="text-theory-gold font-mono text-[10px] uppercase tracking-widest mb-6 underline decoration-theory-gold/30">Core Deliverables</h4>
-                        <ul class="space-y-4 text-sm font-light opacity-90">
-                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-theory-gold"></i> High-End Content Creation</li>
-                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-theory-gold"></i> Full Account Handling</li>
-                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-theory-gold"></i> AI Agent & Swarm Automation</li>
-                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-theory-gold"></i> Zero-Latency Performance Audits</li>
-                        </ul>
-                    </div>
-                    <div class="flex flex-col justify-center items-center md:items-end">
-                        <span class="text-[10px] text-slate-400 uppercase tracking-widest mb-2">Baseline Deployment Fee</span>
-                        <span class="text-6xl font-bold font-serif mb-10">30K</span>
-                        <a href="https://wa.me/94742304698" class="w-full text-center py-4 bg-white text-theory-dark font-bold uppercase text-[10px] tracking-widest hover:bg-theory-gold hover:text-white transition-all">Initiate Protocol</a>
+    <section id="protocol" class="py-24 px-6 bg-theory-blue text-white overflow-hidden relative">
+        <div class="max-w-5xl mx-auto border border-white/10 p-10 md:p-16 relative z-10">
+            <div class="flex flex-col lg:flex-row justify-between gap-16">
+                <div class="flex-1 reveal">
+                    <span class="text-theory-gold font-bold tracking-widest text-xs uppercase mb-6 block">/// Current Protocol</span>
+                    <h2 class="text-5xl font-serif mb-6 italic font-light">The Agentic Suite.</h2>
+                    <p class="text-slate-300 text-lg mb-10 leading-relaxed font-light">
+                        This offer replaces the Velocity Protocol. Comprehensive content, handling, and AI deployment for total market domination.
+                    </p>
+                    <a href="https://wa.me/94742304698" class="inline-block px-12 py-5 bg-white text-theory-blue font-bold uppercase tracking-widest hover:bg-theory-gold hover:text-white transition-all">
+                        Initiate Now
+                    </a>
+                </div>
+                <div class="lg:w-1/3 flex flex-col justify-center border-t lg:border-t-0 lg:border-l border-white/10 pt-8 lg:pt-0 lg:pl-16">
+                    <div class="font-mono">
+                        <div class="text-xs text-gray-400 mb-2 font-bold uppercase tracking-tighter">Baseline Price</div>
+                        <div class="text-5xl font-bold mb-3">30K</div>
+                        <div class="text-[10px] text-theory-gold uppercase tracking-[0.2em]">Deployment Node: OPEN</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="faq" class="py-32 px-6 bg-white">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-3xl font-serif text-theory-blue mb-16 text-center">System Queries</h2>
-            <div class="space-y-8">
-                <div class="border-b border-slate-100 pb-6">
-                    <h4 class="font-bold text-[11px] mb-2 uppercase tracking-widest">Why 30,000 LKR?</h4>
-                    <p class="text-sm text-slate-500 font-light">This is the entry barrier for high-performance agentic nodes. It covers the fundamental architecture required to automate your growth.</p>
-                </div>
-                <div class="border-b border-slate-100 pb-6">
-                    <h4 class="font-bold text-[11px] mb-2 uppercase tracking-widest">Is the Agent autonomous?</h4>
-                    <p class="text-sm text-slate-500 font-light">Yes. Our Surge Flow infrastructure makes decisions based on real-time market data, adjusting content and spend for maximum ROI.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <footer class="bg-white border-t border-slate-200 pt-20 pb-10 px-6 text-sm text-center">
+        <div class="w-10 h-10 bg-theory-blue rounded-full flex items-center justify-center text-white font-bold text-xl font-serif mx-auto mb-6">N</div>
+        <p class="uppercase tracking-widest text-[10px] text-slate-400">&copy; 2026 Naked Theory. Colombo & Kandy Nodes. All Systems Agentic.</p>
+    </footer>
 
     <div class="fixed bottom-6 right-6 z-[100]">
         <div id="chat-window" class="w-[350px] h-[500px] bg-white rounded-lg shadow-2xl border border-slate-200 flex flex-col overflow-hidden mb-4">
@@ -222,26 +227,22 @@
                 </div>
                 <button onclick="toggleChat()" class="text-white/50 hover:text-white"><i data-lucide="x" class="w-4 h-4"></i></button>
             </div>
-            <div id="chat-messages" class="flex-1 p-4 overflow-y-auto text-[13px] space-y-4 bg-slate-50 font-light">
-                <div class="bg-slate-200 p-3 rounded-sm max-w-[85%]">Connection established. This is <strong>Naked-01</strong>. State your business objective.</div>
+            <div id="chat-messages" class="flex-1 p-4 overflow-y-auto text-[13px] space-y-4 bg-slate-50 font-light leading-relaxed">
+                <div class="bg-slate-200 p-3 rounded-sm max-w-[85%]">Connecting... Objective: State your marketing goal for the **Agentic Suite (30k LKR)**.</div>
             </div>
-            <div class="p-4 border-t border-slate-100 flex gap-2">
-                <input id="chat-input" type="text" placeholder="Enter objective..." class="flex-1 bg-slate-100 border-none px-3 py-2 text-xs focus:ring-1 focus:ring-theory-gold outline-none rounded-sm">
+            <div class="p-4 border-t border-slate-100 flex gap-2 bg-white">
+                <input id="chat-input" type="text" placeholder="State objective..." class="flex-1 bg-slate-100 border-none px-3 py-2 text-xs outline-none rounded-sm">
                 <button onclick="sendMessage()" class="bg-theory-blue text-white px-3 py-2 rounded-sm"><i data-lucide="send" class="w-4 h-4"></i></button>
             </div>
         </div>
 
         <button onclick="toggleChat()" class="w-16 h-16 bg-theory-blue rounded-full flex items-center justify-center shadow-2xl border-2 border-theory-gold/30 hover:scale-105 transition-transform overflow-hidden">
-            <svg viewBox="0 0 24 24" class="w-8 h-8 text-theory-gold opacity-80" fill="none" stroke="currentColor" stroke-width="1.5">
+            <svg viewBox="0 0 24 24" class="w-8 h-8 text-theory-gold" fill="none" stroke="currentColor" stroke-width="1.5">
                 <path d="M12 2C7.03 2 3 6.03 3 11c0 2.18.78 4.18 2.09 5.74L4 22l5.26-1.09C10.15 21.6 11.06 22 12 22c4.97 0 9-4.03 9-9s-4.03-9-9-9z" />
                 <path d="M12 7v4m0 4h.01" stroke-linecap="round"/>
             </svg>
         </button>
     </div>
-
-    <footer class="py-20 px-6 bg-white border-t border-slate-100 text-[9px] uppercase tracking-[0.4em] text-center text-slate-400">
-        <p>&copy; 2026 NAKED THEORY. ALL SYSTEMS AGENTIC. KANDY & COLOMBO NODES ACTIVE.</p>
-    </footer>
 
     <script>
         lucide.createIcons();
@@ -249,43 +250,58 @@
 
         // REVEAL ANIMATIONS
         gsap.utils.toArray('.reveal').forEach(elem => {
-            gsap.from(elem, { scrollTrigger: elem, y: 30, opacity: 0, duration: 1, ease: "power3.out", stagger: 0.1 });
+            gsap.from(elem, { scrollTrigger: elem, y: 30, opacity: 0, duration: 1, ease: "power3.out", stagger: 0.2 });
         });
 
-        // CHATBOT ENGINE
+        // CHATBOT LOGIC
         const API_KEY = "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";
         const chatWindow = document.getElementById('chat-window');
-        const messages = document.getElementById('chat-messages');
+        const messagesContainer = document.getElementById('chat-messages');
         const chatInput = document.getElementById('chat-input');
 
-        function toggleChat() { chatWindow.classList.toggle('active'); }
+        function toggleChat() { chatWindow.classList.toggle('open'); }
 
         async function sendMessage() {
             const val = chatInput.value.trim(); if(!val) return;
             appendMsg('user', val); chatInput.value = '';
-            
+
             try {
                 const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
                     method: "POST",
                     headers: { "Authorization": `Bearer ${API_KEY}`, "Content-Type": "application/json" },
                     body: JSON.stringify({
                         model: "llama-3.3-70b-versatile",
-                        messages: [{role: "system", content: "You are Naked-01, an elite agent for Naked Theory. We do agentic marketing starting at LKR 30,000. Your tone is efficient, technical, and high-status. Be brief."}, {role: "user", content: val}]
+                        messages: [
+                            {role: "system", content: "You are Naked-01. Professional, minimalist, agentic. We offer the Agentic Marketing Suite (Content, Handling, AI) starting at 30k LKR. Brief responses only."},
+                            {role: "user", content: val}
+                        ]
                     })
                 });
                 const data = await res.json();
                 appendMsg('bot', data.choices[0].message.content);
-            } catch { appendMsg('bot', "Neural link timed out."); }
+            } catch { appendMsg('bot', "Synapse error. Re-engage protocol."); }
         }
 
         function appendMsg(role, text) {
-            const d = document.createElement('div');
-            d.className = role === 'user' ? 'ml-auto bg-theory-blue text-white p-3 rounded-sm max-w-[85%]' : 'bg-slate-200 p-3 rounded-sm max-w-[85%]';
-            d.innerHTML = text; messages.appendChild(d);
-            messages.scrollTop = messages.scrollHeight;
+            const div = document.createElement('div');
+            div.className = role === 'user' ? 'ml-auto bg-theory-blue text-white p-3 rounded-sm max-w-[85%]' : 'bg-slate-200 p-3 rounded-sm max-w-[85%]';
+            div.innerHTML = text; messagesContainer.appendChild(div);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
         }
 
         chatInput.addEventListener('keypress', (e) => { if(e.key === 'Enter') sendMessage(); });
+
+        // NAVBAR SCROLL
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 20) {
+                nav.classList.add('bg-white/95', 'backdrop-blur-md', 'shadow-sm', 'py-4');
+                nav.classList.remove('py-6');
+            } else {
+                nav.classList.remove('bg-white/95', 'backdrop-blur-md', 'shadow-sm', 'py-4');
+                nav.classList.add('py-6');
+            }
+        });
     </script>
 </body>
 </html>
