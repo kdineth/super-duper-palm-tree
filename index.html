@@ -6,9 +6,8 @@
     
     <title>Naked Theory | Surge Flow: The Agentic Marketing Revolution</title>
     <meta name="description" content="Dominate your market with Naked Theory. Home to Surge Flow, replacing traditional marketing with autonomous growth engines.">
-    <meta name="keywords" content="Surge Flow AI, Marketing Agency Kandy, Agentic AI Marketing, Digital Marketing Kandy, AI Marketing Sri Lanka, Naked Theory Pro">
-    <meta name="author" content="Naked Theory">
     <link rel="icon" type="image/jpeg" href="logo.jpeg">
+    <link rel="canonical" href="https://www.nakedtheory.pro/">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,15 +32,6 @@
                         'theory-blue': '#0C1E30',
                         'theory-cream': '#FAFAF9',
                         'theory-gold': '#C5A059',
-                    },
-                    animation: {
-                        'fade-in-up': 'fadeInUp 1s ease-out forwards',
-                    },
-                    keyframes: {
-                        fadeInUp: {
-                            '0%': { opacity: '0', transform: 'translateY(30px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
-                        }
                     }
                 }
             }
@@ -50,22 +40,17 @@
     
     <style>
         html { scroll-behavior: smooth; }
-        body { -webkit-font-smoothing: antialiased; }
-        h1, h2, h3, h4 { letter-spacing: -0.02em; }
-        #mobile-menu { transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); transform: translateX(100%); }
-        #mobile-menu.open { transform: translateX(0); }
+        body { -webkit-font-smoothing: antialiased; background-color: #FAFAF9; }
         .terminal-glow { box-shadow: 0 0 30px rgba(197, 160, 89, 0.15); }
         .agent-active { border-color: #C5A059 !important; background: rgba(197, 160, 89, 0.1); }
         .terminal-scroll::-webkit-scrollbar { width: 4px; }
         .terminal-scroll::-webkit-scrollbar-track { background: transparent; }
         .terminal-scroll::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
-        
-        /* Chatbot Custom Styling */
         #chat-window { transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); transform: translateY(20px); opacity: 0; pointer-events: none; }
         #chat-window.open { transform: translateY(0); opacity: 1; pointer-events: all; }
     </style>
 </head>
-<body class="font-sans text-slate-800 bg-theory-cream min-h-screen selection:bg-theory-blue selection:text-white overflow-x-hidden">
+<body class="font-sans text-slate-800 selection:bg-theory-blue selection:text-white">
 
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4 md:py-6">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
@@ -104,7 +89,7 @@
 
     <header class="relative pt-32 pb-20 md:pt-48 md:pb-40 px-6 overflow-hidden">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-            <div class="relative z-10 animate-fade-in-up">
+            <div class="relative z-10 reveal">
                 <span class="text-theory-gold font-bold tracking-[0.3em] text-xs uppercase mb-4 block">/// The Agentic Revolution</span>
                 <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif text-theory-blue leading-[1.05] mb-8">
                     Fire Your Marketing<br/>
@@ -114,7 +99,7 @@
                     Traditional marketing is slow and expensive. <strong>Surge Flow</strong> is our agentic AI infrastructure that replaces entire departments with autonomous growth engines.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-5">
-                    <a href="#demo" class="px-10 py-4 bg-theory-blue text-white hover:bg-theory-gold transition-colors flex items-center justify-center gap-3 text-xs font-bold tracking-widest uppercase">
+                    <a href="#demo" class="px-10 py-4 bg-theory-blue text-white hover:bg-theory-gold transition-colors flex items-center justify-center gap-3 text-xs font-bold tracking-widest uppercase shadow-xl">
                         Test The Agents <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </a>
                     <a href="#protocol" class="px-10 py-4 border border-theory-blue text-theory-blue hover:bg-slate-50 transition-colors text-xs font-bold tracking-widest uppercase flex items-center justify-center">
@@ -123,7 +108,7 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-2 gap-4 h-[500px] md:h-[700px] w-full mt-8 md:mt-0 relative">
+            <div class="grid grid-cols-2 gap-4 h-[500px] md:h-[700px] w-full mt-8 md:mt-0 relative reveal">
                 <div class="relative bg-slate-100 rounded-sm overflow-hidden shadow-2xl">
                     <img src="kandy.jpg" alt="Kandy HQ" class="w-full h-full object-cover grayscale opacity-90 transition-transform duration-[2s]">
                     <div class="absolute inset-0 bg-gradient-to-t from-theory-blue/40 via-transparent to-transparent"></div>
@@ -138,47 +123,14 @@
         </div>
     </header>
 
-    <section class="bg-theory-blue text-white py-16 border-y border-slate-800">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12">
-            <div class="flex flex-col gap-3 border-l border-white/10 pl-6">
-                <i data-lucide="shield-check" class="w-6 h-6 text-theory-gold"></i>
-                <div>
-                    <h3 class="font-bold text-sm uppercase tracking-wide">Radical Trust</h3>
-                    <p class="text-xs text-slate-400 mt-1">Full transparency accounts.</p>
-                </div>
-            </div>
-            <div class="flex flex-col gap-3 border-l border-white/10 pl-6">
-                <i data-lucide="trending-up" class="w-6 h-6 text-theory-gold"></i>
-                <div>
-                    <h3 class="font-bold text-sm uppercase tracking-wide">ROI Focused</h3>
-                    <p class="text-xs text-slate-400 mt-1">Bottom-line impact only.</p>
-                </div>
-            </div>
-            <div class="flex flex-col gap-3 border-l border-white/10 pl-6">
-                <i data-lucide="globe" class="w-6 h-6 text-theory-gold"></i>
-                <div>
-                    <h3 class="font-bold text-sm uppercase tracking-wide">Global Scale</h3>
-                    <p class="text-xs text-slate-400 mt-1">Kandy to the World.</p>
-                </div>
-            </div>
-            <div class="flex flex-col gap-3 border-l border-white/10 pl-6">
-                <i data-lucide="clock" class="w-6 h-6 text-theory-gold"></i>
-                <div>
-                    <h3 class="font-bold text-sm uppercase tracking-wide">Agile Sprints</h3>
-                    <p class="text-xs text-slate-400 mt-1">Speed is currency.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="py-24 px-6 bg-white">
+    <section id="services" class="py-24 px-6 bg-white border-y border-slate-100">
         <div class="max-w-7xl mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
                 <div>
                     <span class="text-theory-gold font-bold tracking-widest text-xs uppercase mb-3 block">01 // Capabilities</span>
                     <h2 class="text-4xl md:text-5xl font-serif text-theory-blue">Full-Stack Domination</h2>
                 </div>
-                <p class="max-w-md text-slate-500 text-sm md:text-base leading-relaxed font-light">
+                <p class="max-w-md text-slate-500 text-sm md:text-base leading-relaxed font-light italic">
                     We architect the entire digital ecosystem. From the first line of code to the final conversion pixel, we control the vertical.
                 </p>
             </div>
@@ -187,22 +139,22 @@
                 <div class="bg-white p-12 group hover:bg-slate-50 transition-colors">
                     <i data-lucide="video" class="text-theory-blue w-8 h-8 mb-6"></i>
                     <h3 class="text-xl font-bold text-theory-blue mb-4">Content Creation</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-6">
-                        High-end visual narratives and asset generation. We don't just post; we create scroll-stopping leverage.
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6 font-light">
+                        High-end visual narratives and asset generation. We create scroll-stopping leverage to scale brand authority.
                     </p>
                 </div>
                 <div class="bg-white p-12 group hover:bg-slate-50 transition-colors">
                     <i data-lucide="users" class="text-theory-blue w-8 h-8 mb-6"></i>
                     <h3 class="text-xl font-bold text-theory-blue mb-4">Account Handling</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-6">
-                        Dedicated professional profile management. Zero-latency engagement meets high-level distribution strategy.
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6 font-light">
+                        Dedicated professional profile management. Strategic distribution meets zero-latency interaction.
                     </p>
                 </div>
                 <div class="bg-white p-12 group hover:bg-slate-50 transition-colors">
                     <i data-lucide="cpu" class="text-theory-blue w-8 h-8 mb-6"></i>
                     <h3 class="text-xl font-bold text-theory-blue mb-4">AI Automation</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-6">
-                        Deploying custom agents to handle lead qualification, data analysis, and repetitive marketing workflows 24/7.
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6 font-light">
+                        Configuring custom AI agents to automate lead qualification and marketing workflows 24/7.
                     </p>
                 </div>
             </div>
@@ -259,57 +211,57 @@
             <div class="mb-16">
                 <span class="text-theory-gold font-bold tracking-widest text-xs uppercase mb-3 block">02 // Verified Archive</span>
                 <h2 class="text-4xl font-serif text-theory-blue mb-6 leading-tight">Strategic Partners</h2>
-                <p class="text-slate-500 text-sm max-w-2xl font-light">Brands Naked Theory has escalated through structural branding and agentic execution.</p>
+                <p class="text-slate-500 text-sm max-w-2xl font-light italic">Brands Naked Theory has escalated through structural branding and agentic execution.</p>
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
-                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Toyota Lanka</div>
-                    <span class="text-[8px] text-slate-400 font-mono uppercase">Automotive</span>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="toyotalanka.png" alt="Toyota Lanka" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Toyota Lanka</h3><span class="text-[8px] text-slate-400 font-mono uppercase">Automotive</span></div>
                 </div>
-                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
-                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">OptiSoft LK</div>
-                    <span class="text-[8px] text-slate-400 font-mono uppercase">Software</span>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="optisoft.jpg" alt="OptiSoft" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">OptiSoft LK</h3><span class="text-[8px] text-slate-400 font-mono uppercase">Software</span></div>
                 </div>
-                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
-                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Golden Land</div>
-                    <span class="text-[8px] text-slate-400 font-mono uppercase">Engineering</span>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="goldenlandpiling.png" alt="Golden Land" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Golden Land</h3><span class="text-[8px] text-slate-400 font-mono uppercase">Engineering</span></div>
                 </div>
-                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
-                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Printronics</div>
-                    <span class="text-[8px] text-slate-400 font-mono uppercase">Global</span>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="printronics.jpeg" alt="Printronics" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Printronics</h3><span class="text-[8px] text-slate-400 font-mono uppercase">Global</span></div>
                 </div>
-                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
-                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Immediate Apex</div>
-                    <span class="text-[8px] text-slate-400 font-mono uppercase">FinTech</span>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="immediateapexedge.png" alt="Immediate Apex" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Immediate Apex</h3><span class="text-[8px] text-slate-400 font-mono uppercase">FinTech</span></div>
                 </div>
-                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
-                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Roobinzz</div>
-                    <span class="text-[8px] text-slate-400 font-mono uppercase">Retail</span>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="roobinzz.png" alt="Roobinzz" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Roobinzz</h3><span class="text-[8px] text-slate-400 font-mono uppercase">Retail</span></div>
                 </div>
-                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
-                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Grand Roobinzz</div>
-                    <span class="text-[8px] text-slate-400 font-mono uppercase">Luxury</span>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="grandroobinzz.png" alt="Grand Roobinzz" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Grand Roobinzz</h3><span class="text-[8px] text-slate-400 font-mono uppercase">Luxury</span></div>
                 </div>
-                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
-                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Moonslice</div>
-                    <span class="text-[8px] text-slate-400 font-mono uppercase">F&B</span>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="moonslice.png" alt="Moonslice" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Moonslice</h3><span class="text-[8px] text-slate-400 font-mono uppercase">F&B</span></div>
                 </div>
-                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
-                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Aura Family</div>
-                    <span class="text-[8px] text-slate-400 font-mono uppercase">Events</span>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="aurafamilygalore.png" alt="Aura Family" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Aura Family</h3><span class="text-[8px] text-slate-400 font-mono uppercase">Events</span></div>
                 </div>
-                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
-                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Sunrise</div>
-                    <span class="text-[8px] text-slate-400 font-mono uppercase">Real Estate</span>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="sunrise.png" alt="Sunrise" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Sunrise</h3><span class="text-[8px] text-slate-400 font-mono uppercase">Real Estate</span></div>
                 </div>
-                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
-                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Micro Elec.</div>
-                    <span class="text-[8px] text-slate-400 font-mono uppercase">Electronics</span>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="microelectronics.png" alt="Micro Electronics" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Micro Elec.</h3><span class="text-[8px] text-slate-400 font-mono uppercase">Electronics</span></div>
                 </div>
-                <div class="bg-white p-6 border border-slate-200/60 shadow-sm flex flex-col justify-between min-h-[160px]">
-                    <div class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Sunera Med.</div>
-                    <span class="text-[8px] text-slate-400 font-mono uppercase">Healthcare</span>
+                <div class="bg-white p-6 border border-slate-200/60 shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between min-h-[160px]">
+                    <div class="h-10 mb-4 flex items-center justify-start"><img src="suneramedical.png" alt="Sunera Medical" class="max-h-full w-auto grayscale group-hover:grayscale-0 transition-all"></div>
+                    <div class="pt-4 border-t border-slate-100"><h3 class="font-bold text-[10px] text-theory-blue uppercase tracking-tight">Sunera Med.</h3><span class="text-[8px] text-slate-400 font-mono uppercase">Healthcare</span></div>
                 </div>
             </div>
         </div>
@@ -319,21 +271,21 @@
         <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;"></div>
         <div class="max-w-5xl mx-auto relative z-10 border border-white/10 bg-white/5 backdrop-blur-md p-10 md:p-16">
             <div class="flex flex-col lg:flex-row justify-between gap-16">
-                <div class="flex-1">
+                <div class="flex-1 reveal">
                     <span class="text-theory-gold font-bold tracking-widest text-xs uppercase mb-6 block">/// Agentic Suite</span>
-                    <h2 class="text-5xl md:text-6xl font-serif leading-none mb-8 italic font-light">The Suite Protocol.</h2>
+                    <h2 class="text-5xl md:text-6xl font-serif leading-none mb-8 italic font-light text-white">The Suite Protocol.</h2>
                     <p class="text-slate-300 text-lg mb-10 leading-relaxed font-light">
-                        The Velocity Protocol has concluded. We are now deploying full-stack autonomous growth engines. Content, Handling, and AI—synced.
+                        Full-stack autonomous growth engines. Content, Handling, and AI—fully synced for LKR 30,000.
                     </p>
-                    <a href="https://wa.me/94742304698" class="inline-block px-12 py-5 bg-white text-theory-blue font-bold uppercase tracking-widest hover:bg-theory-gold hover:text-white transition-all shadow-xl">
+                    <a href="https://wa.me/94742304698?text=Initiate%20Agentic%20Suite" class="inline-block px-12 py-5 bg-white text-theory-blue font-bold uppercase tracking-widest hover:bg-theory-gold hover:text-white transition-all shadow-xl">
                         Initiate Protocol
                     </a>
                 </div>
                 <div class="lg:w-1/3 flex flex-col justify-center border-t lg:border-t-0 lg:border-l border-white/10 pt-8 lg:pt-0 lg:pl-16">
-                    <div class="font-mono">
-                        <div class="text-xs text-gray-400 mb-2 font-bold uppercase tracking-tighter">Starting Base Price</div>
-                        <div class="text-5xl font-bold mb-3" id="protocol-price-display">LKR 0</div>
-                        <div class="text-[10px] text-theory-gold uppercase tracking-[0.2em]">Synapse: Online</div>
+                    <div class="font-mono text-center md:text-left">
+                        <div class="text-[10px] text-gray-400 mb-2 font-bold uppercase tracking-tighter">Baseline Price</div>
+                        <div class="text-6xl font-bold mb-3" id="protocol-price-display">LKR 0</div>
+                        <div class="text-[10px] text-theory-gold uppercase tracking-[0.2em]">Deployment: Open</div>
                     </div>
                 </div>
             </div>
@@ -341,29 +293,30 @@
     </section>
 
     <footer id="contact" class="bg-white border-t border-slate-200 pt-20 pb-10 px-6 text-sm text-center">
-        <div class="w-10 h-10 bg-theory-blue rounded-full flex items-center justify-center text-white font-bold text-xl font-serif mx-auto mb-6">N</div>
-        <p class="text-[10px] text-slate-400 uppercase tracking-widest">&copy; 2026 Naked Theory. Kandy & Colombo Nodes. All Systems Agentic.</p>
+        <div class="w-10 h-10 bg-theory-blue rounded-full flex items-center justify-center text-white font-bold text-xl font-serif mx-auto mb-6 shadow-lg">N</div>
+        <p class="mb-4 text-slate-500 font-light">Contact our nodes: <a href="tel:+94742304698" class="font-bold text-theory-blue tracking-tighter">+94 742304698</a></p>
+        <p class="text-[10px] text-slate-400 uppercase tracking-widest font-bold">&copy; 2026 Naked Theory. Kandy & Colombo Nodes. <br>Deployed at <a href="https://www.nakedtheory.pro/" class="underline decoration-theory-gold">nakedtheory.pro</a></p>
     </footer>
 
     <div class="fixed bottom-6 right-6 z-[100]">
-        <div id="chat-window" class="w-[350px] h-[500px] bg-white rounded-lg shadow-2xl border border-slate-200 flex flex-col overflow-hidden mb-4">
+        <div id="chat-window" class="w-[350px] h-[520px] bg-white rounded-lg shadow-2xl border border-slate-200 flex flex-col overflow-hidden mb-4">
             <div class="bg-theory-blue p-4 text-white flex justify-between items-center">
                 <div class="flex items-center gap-2">
                     <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                    <span class="text-[10px] font-bold uppercase tracking-widest">Naked-01 Active</span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest">Naked-01 Neural Link</span>
                 </div>
                 <button onclick="toggleChat()" class="text-white/50 hover:text-white"><i data-lucide="x" class="w-4 h-4"></i></button>
             </div>
-            <div id="chat-messages" class="flex-1 p-4 overflow-y-auto text-[13px] space-y-4 bg-slate-50 font-light leading-relaxed">
-                <div class="bg-slate-200 p-3 rounded-sm max-w-[85%]">Node Online. This is <strong>Naked-01</strong>. State your growth objective for the 30k suite.</div>
+            <div id="chat-messages" class="flex-1 p-5 overflow-y-auto text-[13px] space-y-4 bg-slate-50 font-light leading-relaxed">
+                <div class="bg-slate-200 p-3 rounded-sm max-w-[85%]">Hello! I'm <strong>Naked-01</strong>. I'm here to help you navigate the agentic shift. What are we building today?</div>
             </div>
             <div class="p-4 border-t border-slate-100 flex gap-2 bg-white">
-                <input id="chat-input" type="text" placeholder="State objective..." class="flex-1 bg-slate-100 border-none px-3 py-2 text-xs outline-none rounded-sm">
-                <button onclick="sendMessage()" class="bg-theory-blue text-white px-3 py-2 rounded-sm"><i data-lucide="send" class="w-4 h-4"></i></button>
+                <input id="chat-input" type="text" placeholder="How can I help you scale?" class="flex-1 bg-slate-100 border-none px-3 py-2 text-xs outline-none rounded-sm">
+                <button onclick="sendMessage()" class="bg-theory-blue text-white px-3 py-2 rounded-sm hover:bg-theory-gold transition-colors"><i data-lucide="send" class="w-4 h-4"></i></button>
             </div>
         </div>
 
-        <button onclick="toggleChat()" class="w-16 h-16 bg-theory-blue rounded-full flex items-center justify-center shadow-2xl border-2 border-theory-gold/30 hover:scale-105 transition-transform overflow-hidden group">
+        <button onclick="toggleChat()" class="w-16 h-16 bg-theory-blue rounded-full flex items-center justify-center shadow-2xl border-2 border-theory-gold/30 hover:scale-110 transition-transform overflow-hidden relative">
             <svg viewBox="0 0 24 24" class="w-8 h-8 text-theory-gold opacity-90" fill="none" stroke="currentColor" stroke-width="1.5">
                 <path d="M12 2C7 2 3 6 3 11c0 2.2.8 4.2 2.1 5.7L4 22l5.3-1.1c.9.5 1.8.9 2.7.9 5 0 9-4 9-9s-4-9-9-9z" />
                 <path d="M9 11a3 3 0 1 0 6 0 3 3 0 0 0-6 0z" />
@@ -407,27 +360,32 @@
             lucide.createIcons();
         });
 
-        // Price trigger
+        // Reveals
+        gsap.utils.toArray('.reveal').forEach(elem => {
+            gsap.from(elem, { scrollTrigger: elem, y: 30, opacity: 0, duration: 1.2, ease: "power3.out", stagger: 0.2 });
+        });
+
         ScrollTrigger.create({
             trigger: "#protocol",
             onEnter: () => animatePrice('protocol-price-display', STARTING_PRICE)
         });
 
-        // Agent terminal logic
+        // Agent Logic
         const agentOutputs = {
             creative: [
                 { t: "Initiating Creative Agent...", c: "theory-gold" },
-                { t: "Generating 500 ad variants for multi-channel deployment...", c: "slate-500" },
-                { t: "Hook: 'Fire your marketing team. Deploy an AI swarm.'", c: "slate-300" }
+                { t: "Generating multi-channel ad variants...", c: "slate-500" },
+                { t: "Success: Assets optimized for ROAS.", c: "green-400 font-bold" }
             ],
             audit: [
                 { t: "Initiating Audit Agent...", c: "theory-gold" },
-                { t: "Scanning nodes at Kandy & Colombo centers...", c: "slate-500" },
-                { t: "Fixing checkout friction and latencies...", c: "slate-500" }
+                { t: "Scanning Kandy & Colombo infrastructure...", c: "slate-500" },
+                { t: "Success: Friction points removed.", c: "green-400 font-bold" }
             ],
             stats: [
                 { t: "Initiating Statistics Agent...", c: "theory-gold" },
-                { t: "Predictive Forecast: +24% revenue over 30 days.", c: "green-400 font-bold" }
+                { t: "Syncing revenue streams...", c: "slate-500" },
+                { t: "Success: +24% growth forecast for Q1.", c: "green-400 font-bold" }
             ]
         };
 
@@ -446,7 +404,7 @@
             }, 600);
         }
 
-        // CHATBOT ENGINE
+        // Friendly Chatbot Engine
         const API_KEY = "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";
         const chatWindow = document.getElementById('chat-window');
         const messagesContainer = document.getElementById('chat-messages');
@@ -465,14 +423,14 @@
                     body: JSON.stringify({
                         model: "llama-3.3-70b-versatile",
                         messages: [
-                            {role: "system", content: "You are Naked-01. Professional, minimalist, and direct. We offer the Agentic Marketing Suite (Content, Handling, AI) starting at 30k LKR. Brief responses only."},
+                            {role: "system", content: "Your name is Naked-01. You are a friendly, collaborative, and professional AI partner for Naked Theory. We offer the Agentic Marketing Suite starting at 30k LKR. You help brand owners scale using AI content, handling, and automation. Be warm and supportive. If they want to start, mention WhatsApp +94 742304698 or nakedtheory.pro."},
                             {role: "user", content: val}
                         ]
                     })
                 });
                 const data = await res.json();
                 appendMsg('bot', data.choices[0].message.content);
-            } catch { appendMsg('bot', "Connection failure. Re-engage protocol."); }
+            } catch { appendMsg('bot', "Synapse snag! Mind trying that again?"); }
         }
 
         function appendMsg(role, text) {
